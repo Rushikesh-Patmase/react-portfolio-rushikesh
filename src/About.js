@@ -1,4 +1,6 @@
 import { FaArrowAltCircleRight, FaDownload } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJsSquare, FaReact, FaNode,  } from "react-icons/fa";
+import { DiMongodb, DiPython } from "react-icons/di";
 
 const About = () => {
     return (  
@@ -16,7 +18,15 @@ const About = () => {
                         for innovation to contribute to projects, while learning from experienced professionals and developing a
                         successful career.</p><br/>
                     <p className='font-bold  text-xl pb-5'>Tech Stack.</p>
-                    <p className="font-mono ">HTML, CSS, JAVASCRIPT, REACT.JS, TAILWIND CSS, MONGODB, NODE.JS, EXPRESS.JS</p>
+                    <div className="flex flex-row">
+                        <FaHtml5 className='w-20 h-10'/>
+                        <FaCss3 className='w-20 h-10'/>
+                        <FaJsSquare className='w-20 h-10'/>
+                        <FaReact className='w-20 h-10'/>
+                        <DiMongodb className='w-20 h-10'/>
+                        <FaNode className='w-20 h-10'/>
+                        <DiPython className='w-20 h-10'/>
+                    </div>
                     <p className='font-bold  text-xl pb-5 pt-5'>Languages Known.</p>
                     <p className="pb-5">English, Hindi, Marathi, Telugu. </p>
                 </div>
