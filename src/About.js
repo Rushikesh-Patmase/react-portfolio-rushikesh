@@ -1,6 +1,7 @@
 import { FaArrowAltCircleRight, FaDownload } from "react-icons/fa";
-import { FaHtml5, FaCss3, FaJsSquare, FaReact, FaNode,  } from "react-icons/fa";
-import { DiMongodb, DiPython } from "react-icons/di";
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNode,  } from "react-icons/fa";
+import { DiPython } from "react-icons/di";
+import { BiLogoMongodb, BiLogoTailwindCss, BiLogoCPlusPlus } from "react-icons/bi";
 
 const About = () => {
     return (  
@@ -19,13 +20,15 @@ const About = () => {
                         successful career.</p><br/>
                     <p className='font-bold  text-xl pb-5'>Tech Stack.</p>
                     <div className="flex flex-row">
-                        <FaHtml5 className='w-20 h-10'/>
-                        <FaCss3 className='w-20 h-10'/>
-                        <FaJsSquare className='w-20 h-10'/>
-                        <FaReact className='w-20 h-10'/>
-                        <DiMongodb className='w-20 h-10'/>
-                        <FaNode className='w-20 h-10'/>
-                        <DiPython className='w-20 h-10'/>
+                        <FaHtml5 className='w-20 h-10 text-orange-600'/>
+                        <FaCss3Alt className='w-20 h-10 text-sky-600'/>
+                        <FaJsSquare className='w-20 h-10 text-black'/>
+                        <FaReact className='w-20 h-10 text-sky-600'/>
+                        <BiLogoTailwindCss className='w-20 h-10 text-purple-800'/>
+                        <BiLogoMongodb className='w-20 h-10 text-green-800'/>
+                        <FaNode className='w-20 h-10 text-green-300'/>
+                        <DiPython className='w-20 h-10 text-yellow-200'/>
+                        <BiLogoCPlusPlus className='w-20 h-10 text-blue-900'/>
                     </div>
                     <p className='font-bold  text-xl pb-5 pt-5'>Languages Known.</p>
                     <p className="pb-5">English, Hindi, Marathi, Telugu. </p>
