@@ -12,7 +12,7 @@ import Contact from './Contact';
 function App() {
   return (
     <Router>
-        <div className="bg-cover bg-center flex flex-col" style={{ backgroundImage: `url(${backgroundImage})` }}>
+        <div className="bg-cover bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
         {/* How to Set Background Image =>
             <div className="bg-cover bg-center flex flex-col overflow-y-scroll" style={{ backgroundImage: `url(${backgroundImage})` }}> 
         */}
