@@ -1,16 +1,37 @@
 import { Link } from 'react-router-dom';
+import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
+import { useState } from 'react';
+
 const Navbar = () => {
+    const [nav, setNav] = useState(false);
+
+    const handleNav = () => {
+        setNav(!nav);
+    }
     return ( 
-        <nav className="navbar">
-            <div className='shadow-2xl flex flex-row bg-black justify-center space-x-10'>
-                <span className='text-orange-600 font-bold text-xl p-4 w-1/4'>MyFolio.</span>
-                <Link to='/' className='rounded-none text-white p-4 transform hover:bg-cyan-900 transition duration-500 hover:text-orange-500'>About Me</Link>
-                <Link to='/education' className='rounded-none text-white p-4 transform hover:bg-cyan-900 transition duration-500 hover:text-orange-500'>Education</Link>
-                <Link to='/projects' className='rounded-none text-white p-4 transform hover:bg-cyan-900 transition duration-500 hover:text-orange-500'>Projects</Link>
-                <Link to='/certificates' className='rounded-none text-white p-4 transform hover:bg-cyan-900 transition duration-500 hover:text-orange-500'>Certificates</Link>
-                <Link to='/contact' className='rounded-none text-white p-4 transform hover:bg-cyan-900 transition duration-500 hover:text-orange-500'>Contact Me</Link>
+        <div className="flex justify-between items-center h-24 max-w-[1160px] mx-auto px-4 bg-black bg-opacity-60 shadow-2xl">
+            <h1 className='text-orange-600 font-bold text-2xl w-full'>MyFolio.</h1>
+            <ul className='hidden md:flex'>
+                <li><Link to='/' className='rounded-none text-white p-4 transform hover:bg-cyan-900 transition duration-500 hover:text-orange-500'>About</Link></li>
+                <li><Link to='/education' className='rounded-none text-white p-4 transform hover:bg-cyan-900 transition duration-500 hover:text-orange-500'>Education</Link></li>
+                <li><Link to='/projects' className='rounded-none text-white p-4 transform hover:bg-cyan-900 transition duration-500 hover:text-orange-500'>Projects</Link></li>
+                <li><Link to='/certificates' className='rounded-none text-white p-4 transform hover:bg-cyan-900 transition duration-500 hover:text-orange-500'>Certificates</Link></li>
+                <li><Link to='/contact' className='rounded-none text-white p-4 transform hover:bg-cyan-900 transition duration-500 hover:text-orange-500'>Contact</Link></li>
+            </ul>
+            <div onClick={ handleNav }>
+                { !nav ? <AiOutlineClose size={30} className='text-white'/> : <AiOutlineMenu size={30} className='text-white md:hidden' /> }
             </div>
-        </nav>    
+            <div className={ !nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-grey-900 bg-emerald-900 ease-in-out duration-500' : 'fixed left-[-100%]'}>
+                <h1 className='text-orange-600 font-bold text-2xl m-4 p-4 w-full'>MyFolio.</h1>
+                <ul className='uppercase p-2'>
+                    <li className='p-4 border-b border-gray-500'><Link to='/' className='rounded-none text-white p-4 hover:text-orange-500'>About</Link></li>
+                    <li className='p-4 border-b border-gray-500'><Link to='/education' className='rounded-none text-white p-4  hover:text-orange-500'>Education</Link></li>
+                    <li className='p-4 border-b border-gray-500'><Link to='/projects' className='rounded-none text-white p-4 hover:text-orange-500'>Projects</Link></li>
+                    <li className='p-4 border-b border-gray-500'><Link to='/certificates' className='rounded-none text-white p-4  hover:text-orange-500'>Certificates</Link></li>
+                    <li className='p-4 border-b border-gray-500'><Link to='/contact' className='rounded-none text-white p-4 hover:text-orange-500'>Contact</Link></li>
+                </ul>
+            </div>
+        </div>    
     );
 }
     
