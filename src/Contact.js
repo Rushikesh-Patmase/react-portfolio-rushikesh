@@ -9,14 +9,14 @@ const Contact = () => {
         alert('Email sent successfully!');
     }
     return (  
-        <div className="bg-white bg-opacity-30 mx-60 my-10 rounded-lg shadow-2xl justify-center items-center">
-            <p className="text-center text-2xl my-5 font-bold">Contact Me.</p>
-            <form className="flex flex-col mx-32 my-10" onSubmit={sendEmail}>
-                <input type="text" placeholder="Name" name='name' className="bg-black bg-opacity-15 text-white border-b-2 p-2 my-2 "/>
-                <input type="email" placeholder="Email" name='email_from' className="bg-black bg-opacity-15 text-white border-b-2 p-2 my-2 "/>
-                <input type="text" placeholder="Subject" name='subject' className="bg-black bg-opacity-15 text-white border-b-2 p-2 my-2 "/>
-                <textarea placeholder="Message" name='message' className="bg-black bg-opacity-15 text-white border-b-2 p-2 my-2 "></textarea>
-                <button className="bg-green-300 p-2 my-2 rounded-lg transform hover:bg-green-500 transition duration-500">Submit</button>
+        <div className="bg-white bg-opacity-30 md:mx-60 m-10 rounded-lg shadow-2xl justify-center items-center">
+            <p className="text-center text-2xl p-5 font-bold">Contact Me.</p>
+            <form className="flex flex-col mx-10 md:mx-32 my-5" onSubmit={sendEmail}>
+                <input type="text" placeholder="Please enter your Full Name" name='name' className="bg-black bg-opacity-15 text-white border-b-2 p-2 my-2 "/>
+                <input type="email" placeholder="Please enter your Email" name='email_from' className="bg-black bg-opacity-15 text-white border-b-2 p-2 my-2 "/>
+                <input type="text" placeholder="Please mention the Subject" name='subject' className="bg-black bg-opacity-15 text-white border-b-2 p-2 my-2 "/>
+                <textarea placeholder="Write a Message" name='message' className="bg-black bg-opacity-15 text-white border-b-2 p-2 my-2 "></textarea>
+                <button className="bg-green-300 p-2 my-5 rounded-lg transform hover:bg-green-500 transition duration-500">Submit</button>
             </form>
         </div>
     );
