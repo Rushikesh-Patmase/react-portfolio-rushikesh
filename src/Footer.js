@@ -1,13 +1,13 @@
 import { FaInstagram, FaLinkedin, FaGoogle } from 'react-icons/fa';
 
 const Footer = () => {
-    return (  
+    return (
         <div className='bg-black flex flex-row'>
-            <div className='flex flex-col mx-40'>
+            <div className='flex flex-col mx-15 md:mx-40'>
                 <h1 className='text-orange-600 font-bold text-2xl mx-8 my-5'>MyFolio.</h1>
                 <div className='flex flex-row mx-5'>
-                    <a href='https://www.instagram.com/_rushikeshh___'><FaInstagram className='w-10 h-5 text-white' /></a> 
-                    <a href='https://www.linkedin.com/rushikesh-mukund-patmase-895b9023b'><FaLinkedin className='w-10 h-5 text-white' /></a> 
+                    <a href='https://www.instagram.com/_rushikeshh___'><FaInstagram className='w-10 h-5 text-white' /></a>
+                    <a href='https://www.linkedin.com/rushikesh-mukund-patmase-895b9023b'><FaLinkedin className='w-10 h-5 text-white' /></a>
                     <a href='https://www.gmail.com'><FaGoogle className='w-10 h-5 text-white' /></a>
                 </div>
                 <p className='mx-8 my-5 text-white'>&#169; Copyright Myfolio 2024</p>
