@@ -16,7 +16,7 @@ const Contact = () => {
                 <input type="email" placeholder="Please enter your Email" name='email_from' className="bg-black bg-opacity-15 text-white border-b-2 p-2 my-2 "/>
                 <input type="text" placeholder="Please mention the Subject" name='subject' className="bg-black bg-opacity-15 text-white border-b-2 p-2 my-2 "/>
                 <textarea placeholder="Write a Message" name='message' className="bg-black bg-opacity-15 text-white border-b-2 p-2 my-2 "></textarea>
-                <button className="bg-green-300 p-2 my-5 rounded-lg transform hover:bg-green-500 transition duration-500">Submit</button>
+                <button className="bg-green-300 p-2 my-5 rounded-lg hover:bg-green-500 transition duration-500">Submit</button>
             </form>
         </div>
     );
