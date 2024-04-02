@@ -21,7 +21,7 @@ const Navbar = () => {
             <div onClick={ handleNav }>
                 { !nav ? <AiOutlineClose size={30} className='text-white md:hidden'/> : <AiOutlineMenu size={30} className='text-white md:hidden' /> }
             </div>
-            <div className={ !nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-emerald-900 ease-in-out transition duration-400 md:hidden' : 'fixed left-[-100%]'}>
+            <div className={ !nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-emerald-900 ease-in-out transition duration-400 md:hidden z-10' : 'fixed left-[-100%]'}>
                 <h1 className='text-orange-600 font-bold text-2xl m-4 p-4 w-full'>MyFolio.</h1>
                 <ul className='uppercase p-2'>
                     <li className='p-4 border-b border-gray-500'><Link to='/' className='rounded-none text-white p-4 hover:text-orange-500'>About</Link></li>
