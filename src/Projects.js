@@ -5,7 +5,7 @@ const Projects = () => {
                 <p className='font-bold text-center text-2xl pb-5 '>Projects.</p>
                 <div className='flex flex-col justify-center space-y-5'>
                     <div className='bg-emerald-400 bg-opacity-20 m-5 md:mx-28 p-5 hover:bg-emerald-600 transition duration-500 rounded-lg text-center'>
-                        <span className='bg-blue-800 bg-opacity-20 text-white font-sans rounded-full my-2 px-4 py-1'>September, 2023 - present</span>
+                        <span className='bg-blue-800 bg-opacity-20 text-white font-sans rounded-full my-2 px-4 py-1'>September, 2023 - April, 2024</span>
                         <p className='font-bold mt-2 text-xl'>Guardian Air-Sensor Driven Airbag Inflation for SIDS Prevention.</p>
                         <p className=' text-md'>This project focuses on preventing the infant deaths caused due to suffocation while sleeping in prone position.
                                 The prevention is done by combining continuous monitoring, IOT sensors, and automated response systems, this
