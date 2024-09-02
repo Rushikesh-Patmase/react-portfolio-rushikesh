@@ -36,8 +36,8 @@ const About = () => {
                     </div>
                     <p className='font-bold  text-xl pb-5 pt-5'>Languages Known.</p>
                     <p className="pb-5">English, Hindi, Marathi, Telugu. </p>
-                    <div className="flex flex-row justify-evenly items-center ">
-                        <a href='https://github.com/Rushikesh-Patmase' className='bg-green-100 rounded-lg font-mono flex flex-row p-3 mr-5 hover:bg-green-300 transition duration-500'>View my work<FaArrowAltCircleRight className="w-10 h-6"/></a>
+                    <div className="flex flex-row justify-center items-center ">
+                        <a href='https://github.com/Rushikesh-Patmase' className='bg-green-100 rounded-lg font-mono flex flex-row p-3 mr-5 hover:bg-green-300 transition duration-500'>My Work Profile<FaArrowAltCircleRight className="w-10 h-6"/></a>
                         <a href='https://drive.google.com/file/d/1W4-ctW6SfOSbaWc4GqHrrQCq5VVctD-P/view?usp=sharing' className='bg-green-100 rounded-lg flex flex-row font-mono p-3 hover:bg-green-300 transition duration-500'>Download My CV<FaDownload className="w-10 h-6"/></a>
                     </div>
                 </div>
